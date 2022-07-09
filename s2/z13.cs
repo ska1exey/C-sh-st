@@ -1,16 +1,25 @@
-int x1 = Coordinate("x", "A");
-int y1 = Coordinate("y", "A");
-int z1 = Coordinate("z", "A");
-int x2 = Coordinate("x", "B");
-int y2 = Coordinate("y", "B");
-int z2 = Coordinate("z", "B");
-
-int Coordinate(string xyz, string AB) 
+Console.Write("число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+string st = Convert.ToString(a);
+int i = 0;
+Console.Write("номер цифры числа, которую нужно найти: ");
+int n = Convert.ToInt32(Console.ReadLine());
+if (n > 0)
 {
-    Console.Write("Введите координату {xyz} точки {AB}: ");
-    Convert.ToInt32(Console.ReadLine());
+    if (st.Length > n - 1)
+{
+    while (i + 1 < n)
+{
+    i += 1;
+    }
+Console.WriteLine(n+" цифра этого числа = "+st[i]);
 }
-
-double sl =  Math.Sqrt(Math.Pow((x2-x1), 2) + Math.Pow((y2-y1), 2) + Math.Pow((z2-z1), 2));
-
-Console.WriteLine("Длина отрезка  {sl}");
+else
+{
+    Console.WriteLine(" такого числа нет ");
+}
+}
+else
+{
+    Console.WriteLine(" Error 33333 ");
+}
