@@ -42,7 +42,7 @@ void SearchElement (double[,] array, int m, int n)
   int i = Convert.ToInt32(Console.ReadLine())-1;
   Console.Write("Введите j: ");
   int j = Convert.ToInt32(Console.ReadLine())-1;
-  if ( i < m && i < m)
+  if ( i < m && j < n)
   {
     Console.WriteLine($"Число: {array[i, j]}");
   }
